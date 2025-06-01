@@ -1,0 +1,86 @@
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: monospace;
+}
+
+th, td {
+    border: 1px solid #000000; /* Borde negro */
+    padding: 8px;
+    text-align: left;
+    color: darkblue; /* Texto negro */
+}
+
+th {
+    background-color: #B22222; /* Fondo rojo oscuro para encabezados */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+tr:nth-child(even) {
+    background-color: #1E90FF; /* Azul intermedio para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #FFD700; /* Amarillo dorado para filas impares */
+}
+
+tr:hover {
+    background-color: #228B22; /* Verde oscuro al pasar el mouse */
+}
+
+/* Estilo para el formulario */
+form {
+    border: 2px solid #000000; /* Borde negro */
+    background-color: #B22222; /* Fondo rojo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+form h2 {
+    background-color: #1E90FF; /* Fondo azul intermedio */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="text"], button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #FFD700; /* Bordes amarillo dorado */
+    border-radius: 5px;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+}
+
+input[type="text"]:focus {
+    border-color: #228B22; /* Verde oscuro al enfocar */
+    outline: none;
+}
+
+button {
+    background-color: #1E90FF; /* Fondo azul intermedio */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #FFD700; /* Amarillo dorado al pasar el mouse */
+    color: #000000; /* Texto negro */
+}
+
+input[type="text"]::placeholder {
+    color: #696969; /* Gris oscuro para el placeholder */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Iniciar Sesión</h1>
+    <form id="loginForm">
+      <input type="text" name="nombre" placeholder="Usuario" required>
+      <input type="password" name="contraseña" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="register">
+      ¿No tienes una cuenta? <a href="#" onclick="mostrarRegistro()">Regístrate aquí</a>
+    </div>
+    <div id="messageContainerLogin"></div>
+  </div>
+
+  <!-- Modal para registro -->
+  <div id="registroModal">
+    <div class="modal-content">
+      <h1>Registro</h1>
+      <form id="registroForm">
+        <input type="text" name="nombre" placeholder="Usuario" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+        <button type="button" onclick="cerrarRegistro()">Cerrar</button>
+      </form>
+      <div id="messageContainer"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="frontend_ApiLogin.js"></script>
+</body>
+</html>
