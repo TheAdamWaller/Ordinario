@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+    background-color: #F0F7F4; /* Verde claro relajante */
+    font-family: 'Arial', sans-serif;
+    color: #2E4E1F; /* Verde oscuro para el texto */
+    margin: 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #3E753E; /* Verde intenso */
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #295C29;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #6DA06D;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Contenedor de catálogo */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Productos */
+.producto {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes */
+.producto img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Información */
+.info h2 {
+    color: #295C29;
+    margin: 10px 0;
+}
+
+.info p {
+    font-size: 16px;
+    color: #3E753E;
+}
+
+/* Barra de progreso (indicador de cuidados) */
+.barra-progreso {
+    background-color: #D8E9D2;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.nivel {
+    height: 100%;
+    background-color: #57A957;
+}
+
+/* Botón de compra */
+button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #295C29;
+    color: white;
+    font-size: 14px;
+}

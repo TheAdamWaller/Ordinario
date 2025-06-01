@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    background-color: #AEDF97; /* Verde natural */
+    font-family: 'Arial', sans-serif;
+    color: #2E4E1F; /* Verde oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del formulario */
+.registro-container {
+    width: 280px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h2 {
+    color: #295C29;
+    font-size: 20px;
+    margin-bottom: 20px; /* Mayor separación del título */
+}
+
+/* Campos de formulario */
+label {
+    font-weight: bold;
+    color: #295C29;
+    text-align: center;
+    margin-top: 12px; /* MÁS SEPARACIÓN ENTRE LABELS */
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #57A957;
+    border-radius: 5px;
+    background-color: #F0FFF0;
+    font-size: 14px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #388E3C;
+    outline: none;
+}
+
+/* Botón */
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px; /* Separación del botón */
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Enlace a login */
+p {
+    text-align: center;
+    margin-top: 15px; /* Más separación */
+}
+
+p a {
+    color: #57A957;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

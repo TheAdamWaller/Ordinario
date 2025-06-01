@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="perfil_cliente_styles.css">
+</head>
+<body>
+    <div class="perfil-wrapper">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <h2>🌿 Mi Perfil</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" data-section="datos-personales">Datos Personales</a></li>
+                    <li><a href="#" data-section="compras">Historial de Compras</a></li>
+                    <li><a href="#" data-section="cuidados">Cuidados Específicos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido dinámico -->
+        <main class="perfil-content">
+            <section id="datos-personales" class="perfil-section">
+                <h2>🌿 Información Personal</h2>
+                <p><strong>Folio:</strong> <span id="folio"></span></p>
+                <p><strong>Nombre:</strong> <span id="name"></span></p>
+                <p><strong>Correo:</strong> <span id="email"></span></p>
+                <p><strong>Teléfono:</strong> <span id="phone"></span></p>
+            </section>
+
+            <section id="compras" class="perfil-section">
+                <h2>📋 Historial de Compras</h2>
+                <h3>🌱 Plantas Compradas</h3>
+                <ul id="plants"></ul>
+
+                <h3>📅 Fecha de Compra</h3>
+                <p id="date"></p>
+            </section>
+
+            <section id="cuidados" class="perfil-section">
+                <h2>📖 Cuidados Específicos</h2>
+                <div id="cuidados"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script_perfil_cliente.js"></script>
+</body>
+</html>

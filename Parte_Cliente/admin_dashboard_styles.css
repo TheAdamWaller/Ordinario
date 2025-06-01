@@ -1,0 +1,103 @@
+/* 🌿 Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4e5c6; /* Color cálido tipo madera */
+    color: #4d3b2e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del panel */
+.admin-container {
+    width: 500px;
+    padding: 25px;
+    background: rgba(139, 94, 59, 0.3); /* Fondo madera suave */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🌱 Diseño tipo ficha para datos */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #5a3a1b;
+}
+
+/* Cuadros de entrada optimizados */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #8b5e3b;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+/* 🌱 Alineación perfecta de checkboxes */
+.plantas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas organizadas */
+    gap: 10px;
+    padding: 10px;
+    background: rgba(139, 94, 59, 0.2);
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Cada casilla con texto alineado */
+.plant-item {
+    display: flex;
+    align-items: center; /* Asegura alineación perfecta */
+    gap: 8px; /* Espacio entre el checkbox y el texto */
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(139, 94, 59, 0.3);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.plant-item:hover {
+    background: rgba(139, 94, 59, 0.5);
+}
+
+/* Ajuste del checkbox para evitar desalineaciones */
+.plant-item input {
+    flex-shrink: 0; /* Evita que el checkbox cambie de tamaño */
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+/* 🌟 Botón de registro */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #5a3a1b;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8b5e3b;
+}

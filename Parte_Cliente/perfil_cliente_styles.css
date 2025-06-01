@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4e5c6; /* Color cálido como madera clara */
+    color: #4d3b2e; /* Tonos marrones elegantes */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.perfil-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #8b5e3b, #5a3a1b); /* Madera cálida */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Contenido dinámico */
+.perfil-content {
+    flex: 1;
+    padding: 30px;
+    background-image: url('wood-texture.jpg'); /* Textura de madera */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Secciones */
+.perfil-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 22px;
+    color: #4d3b2e;
+    border-bottom: 2px solid #8b5e3b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Plantas compradas */
+#plants {
+    list-style-type: none;
+    padding: 0;
+}
+
+#plants li {
+    background: rgba(139, 94, 59, 0.3);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Cuidados específicos */
+#cuidados {
+    font-style: italic;
+    font-size: 16px;
+    background: rgba(139, 94, 59, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="estilo_cliente.css">
+</head>
+<body>
+    <div class="registro-container">
+        <h2>Regístrate en Eiraplant 🌿</h2>
+        <form id="clienteRegisterForm">
+            <label for="folio">Número de Folio:</label>
+            <input type="text" id="folio" name="folio" required>
+
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Número de Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Crear Cuenta</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="cliente_login.html">Inicia sesión aquí</a></p>
+    </div>
+    <script src="script_cliente_register.js"></script>
+</body>
+</html>

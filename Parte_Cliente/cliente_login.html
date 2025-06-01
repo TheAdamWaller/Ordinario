@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Cliente</title>
+    <link rel="stylesheet" href="estilo_cliente.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="clienteLoginForm">
+            <label for="folio">Número de Folio:</label>
+            <input type="text" id="folio" name="folio" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="registro_cliente.html">Regístrate aquí</a></p>
+    </div>
+    <script src="script_cliente_login.js"></script>
+</body>
+</html>
