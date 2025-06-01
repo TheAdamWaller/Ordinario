@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="admin_eventos_styles.css">
+</head>
+<body>
+
+    <!-- Menú superior -->
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_register.html">👨‍💼 Agregar Cliente</a></li>
+                <li><a href="admin_client_list.html">📜 Lista de Clientes</a></li>
+                <li><a href="admin_plantas_info.html">🌿 Información de Plantas</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor con contraste y borde neón -->
+    <div class="contrast-container">
+        <h2>📅 Calendario de Eventos</h2>
+
+        <!-- Opciones de gestión (ocultas si no hay sesión) -->
+        <div id="eventosContainer" class="hidden">
+            <button>➕ Agregar Evento</button>
+            <button>✏️ Modificar Evento</button>
+            <button>🗑️ Eliminar Evento</button>
+        </div>
+    </div>
+
+    <script src="admin_script_auth.js"></script>
+</body>
+</html>

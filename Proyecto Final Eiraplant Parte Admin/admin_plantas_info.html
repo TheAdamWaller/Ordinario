@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Información de Plantas</title>
+    <link rel="stylesheet" href="admin_plantas_styles.css">
+</head>
+<body>
+
+    <!-- Menú superior -->
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_register.html">👨‍💼 Agregar Cliente</a></li>
+                <li><a href="admin_client_list.html">📜 Lista de Clientes</a></li>
+                <li><a href="admin_eventos_calendario.html">📅 Calendario de Eventos</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor con contraste y borde neón -->
+    <div class="contrast-container">
+        <h2>🌿 Información de Plantas</h2>
+
+        <!-- Opciones de gestión (ocultas si no hay sesión) -->
+        <div id="plantasContainer" class="hidden">
+            <button id="addPlantButton">➕ Agregar Planta</button>
+            <button id="editPlantButton">✏️ Modificar Planta</button>
+        </div>
+    </div>
+
+    <script src="admin_script_auth.js"></script>
+    <script src="admin_plantas.js"></script>
+
+    <script>
+    document.getElementById("addPlantButton").addEventListener("click", () => {
+        window.location.href = "admin_add_plant.html"; // 🔥 Redirigir al formulario de subida
+    });
+
+    document.getElementById("editPlantButton").addEventListener("click", () => {
+        window.location.href = "admin_edit_plant.html"; // 🔥 Redirigir a la modificación de plantas
+    });
+    </script>
+
+</body>
+</html>

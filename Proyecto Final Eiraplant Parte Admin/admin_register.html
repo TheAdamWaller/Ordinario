@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agregar Administrador</title>
+    <link rel="stylesheet" href="admin_register_styles.css">
+</head>
+<body>
+
+    <!-- Menú superior -->
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_client_list.html">📜 Lista de Clientes</a></li>
+                <li><a href="admin_plantas_info.html">🌿 Información de Plantas</a></li>
+                <li><a href="admin_eventos_calendario.html">📅 Calendario de Eventos</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor con contraste y borde neón -->
+    <div class="contrast-container">
+        <h2>👨‍💼 Agregar Nuevo Cliente</h2>
+
+        <!-- Formulario de registro (oculto si no hay sesión) -->
+        <div id="adminRegisterContainer" class="hidden">
+            <form id="adminRegisterForm">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="admin_id">ID de Identificación (Folio):</label>
+                <input type="text" id="admin_id" name="admin_id" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Registrar Cliente</button>
+            </form>
+        </div>
+    </div>
+    <script src="client_register.js"></script>
+    <script src="admin_script_auth.js"></script>
+</body>
+</html>

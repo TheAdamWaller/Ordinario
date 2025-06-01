@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agregar Planta</title>
+    <link rel="stylesheet" href="admin_add_plant.css"> <!-- 🔗 Nuevo CSS -->
+</head>
+<body>
+
+    <!-- 🔥 Menú Superior -->
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_register.html">👨‍💼 Agregar Cliente</a></li>
+                <li><a href="admin_client_list.html">📜 Lista de Clientes</a></li>
+                <li><a href="admin_eventos_calendario.html">📅 Calendario de Eventos</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔥 Contenedor Principal -->
+    <div class="contrast-container">
+
+        <h2>🌱 Agregar Nueva Planta</h2>
+        <p>Completa el formulario para registrar una planta en el sistema.</p>
+
+            <label for="image">🌱 Imagen de la Planta:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="name">🌿 Nombre Común:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="scientific">🔬 Nombre Científico:</label>
+            <input type="text" id="scientific" name="scientific">
+
+            <label for="description">📄 Información General:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="care">🛠 Cuidados y Especificaciones:</label>
+            <textarea id="care" name="care" rows="4" required></textarea>
+
+            <label for="watering">💧 Frecuencia de Riego (Veces por semana):</label>
+            <input type="number" id="watering" name="watering" min="0" required>
+
+            <label for="careLevel">⚠ Nivel de Cuidado (1 - 100):</label>
+            <input type="range" id="careLevel" name="careLevel" min="1" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+
+            <label for="category">🏡 Categoría:</label>
+            <select id="category" name="category">
+                <option value="interior">Interior</option>
+                <option value="exterior">Exterior</option>
+                <option value="suculenta">Suculenta</option>
+                <option value="árbol">Árbol</option>
+                <option value="flor">Flor</option>
+            </select>
+
+            <label for="sunlight">☀️ Exposición Solar:</label>
+            <select id="sunlight" name="sunlight">
+                <option value="directa">Directa</option>
+                <option value="indirecta">Indirecta</option>
+                <option value="sombra">Sombra</option>
+            </select>
+
+            <label for="notes">📝 Notas Adicionales:</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+
+            <button type="submit">🌱 Registrar Planta</button>
+        </form>
+    </div>
+
+    <!-- 🔥 Scripts -->
+    <script src="admin_script_auth.js"></script>
+    <script src="plant_form_script.js"></script>
+    <script src="admin_add_plant_script.js"></script>
+
+</body>
+</html>

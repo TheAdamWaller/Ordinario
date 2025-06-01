@@ -1,0 +1,134 @@
+/* 🔥 Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 🔥 Menú superior fijo */
+.top-menu {
+    background: url('menu_background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu li {
+    margin: 0 15px;
+}
+
+.top-menu a, .top-menu button {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 16px;
+    padding: 8px;
+    display: inline-block;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.top-menu a:hover, .top-menu button:hover {
+    background: #ff00ff;
+}
+
+/* 🔥 Contenedor centrado y desplazado hacia abajo */
+.contrast-container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+    width: 40%;
+    margin: 120px auto 0; /* 🔥 Lo baja debajo del menú */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 80px; /* 🔥 Ajuste para que no tape el menú */
+}
+
+/* 🔥 Formulario completamente centrado */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 🔥 Labels bien alineadas */
+label {
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+/* 🔥 Cuadros de texto más pequeños y centrados */
+input, select, textarea {
+    width: 80%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #FFA500;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 165, 0, 0.8);
+    text-align: center;
+}
+
+/* 🔥 Botón centrado y con efecto neón */
+button {
+    background: linear-gradient(45deg, #4dff4d, #00ff00);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+    margin-top: 12px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00ff00, #008000);
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 1);
+    transform: scale(1.05);
+}
+
+/* 🔥 Mensaje de éxito completamente centrado */
+#successMessage {
+    display: none;
+    color: #00ff00;
+    font-weight: bold;
+    padding: 8px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+    margin-top: 12px;
+    text-align: center;
+}

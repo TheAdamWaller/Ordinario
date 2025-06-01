@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: 100vw 100vh; /* 🔥 Se ajusta a todo el ancho y alto */
+    background-position: left top; /* 🔥 Hace que cubra desde el lado izquierdo */
+    color: #fff;
+    text-align: center;
+}
+
+/* Menú superior con imagen de fondo */
+.top-menu {
+    background: url('menu_background.jpg') no-repeat center center;
+    background-size: cover; /* 🔥 Ajusta la imagen al tamaño del menú */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu li {
+    margin: 0 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #FFD700; /* 🔥 Dorado neón para mejor contraste */
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); /* 🔥 Glow neón */
+}
+
+.top-menu a:hover {
+    background: #ff00ff;
+}
+
+/* Contenido */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Contenedor con contraste y borde neón */
+.contrast-container {
+    background: rgba(0, 0, 0, 0.8); /* 🔥 Fondo semi-transparente más oscuro */
+    border: 2px solid #FFA500; /* 🔥 Borde naranja neón delgado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8); /* 🔥 Glow neón */
+    width: 50%;
+    margin: 150px auto; /* 🔥 Lo baja más en la pantalla */
+    text-align: center;
+}
+
+/* 🔥 Estilo mejorado para el botón de cerrar sesión */
+#logoutButton {
+    background: linear-gradient(45deg, #ff4d4d, #ff0000); /* 🔥 Rojo degradado */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); /* 🔥 Glow rojo */
+}
+
+#logoutButton:hover {
+    background: linear-gradient(45deg, #ff0000, #b30000); /* 🔥 Rojo más intenso */
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 1); /* 🔥 Glow más fuerte */
+    transform: scale(1.05); /* 🔄 Efecto de crecimiento */
+}

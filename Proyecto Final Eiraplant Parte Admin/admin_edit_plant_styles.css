@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: 100vw 100vh; /* 🔥 Se ajusta a todo el ancho y alto */
+    background-position: left top; /* 🔥 Hace que cubra desde el lado izquierdo */
+    color: #fff;
+    text-align: center;
+}
+
+/* Menú superior con imagen de fondo */
+.top-menu {
+    background: url('menu_background.jpg') no-repeat center center;
+    background-size: cover; /* 🔥 Ajusta la imagen al tamaño del menú */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-menu li {
+    margin: 0 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #FFD700; /* 🔥 Dorado neón para mejor contraste */
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); /* 🔥 Glow neón */
+}
+
+.top-menu a:hover {
+    background: #ff00ff;
+}
+
+/* Contenido */
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Contenedor con contraste y borde neón */
+.contrast-container {
+    background: rgba(0, 0, 0, 0.8); /* 🔥 Fondo semi-transparente más oscuro */
+    border: 2px solid #FFA500; /* 🔥 Borde naranja neón delgado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8); /* 🔥 Glow neón */
+    width: 50%;
+    margin: 150px auto; /* 🔥 Lo baja más en la pantalla */
+    text-align: center;
+}
+
+/* 🔥 Estilo mejorado para el botón de cerrar sesión */
+#logoutButton {
+    background: linear-gradient(45deg, #ff4d4d, #ff0000); /* 🔥 Rojo degradado */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); /* 🔥 Glow rojo */
+}
+
+#logoutButton:hover {
+    background: linear-gradient(45deg, #ff0000, #b30000); /* 🔥 Rojo más intenso */
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 1); /* 🔥 Glow más fuerte */
+    transform: scale(1.05); /* 🔄 Efecto de crecimiento */
+}
+
+
+/* 🔥 Fondo oscurecido con reducción de contraste */
+.darkened-background {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🌟 Cuadro con borde naranja neón */
+.neon-box {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #FFA500; /* 🔥 Borde naranja neón */
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.8);
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 📜 Ajustes de los campos del formulario */
+.admin-form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left; /* 🔥 Asegura buena alineación de los textos */
+}
+
+.admin-form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* 🔥 Centra las etiquetas */
+}
+
+.admin-form-group input,
+.admin-form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #FFA500;
+    background: rgba(40, 40, 40, 0.9);
+    color: #ffffff;
+    display: block;
+    margin: auto;
+}
+
+/* 🎯 Botones con efectos neón */
+.admin-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.admin-btn-save {
+    background: linear-gradient(45deg, #00ffcc, #009999);
+    color: #000;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 12px #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-btn-save:hover {
+    background: linear-gradient(45deg, #009999, #005555);
+    box-shadow: 0px 0px 18px #00ffcc;
+    transform: scale(1.05);
+}
+
+.admin-btn-delete {
+    background: linear-gradient(45deg, #ff4444, #cc0000);
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 12px #ff4444;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-btn-delete:hover {
+    background: linear-gradient(45deg, #cc0000, #990000);
+    box-shadow: 0px 0px 18px #ff4444;
+    transform: scale(1.05);
+}

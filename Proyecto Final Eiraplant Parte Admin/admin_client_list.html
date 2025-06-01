@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="admin_styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_register.html">👨‍💼 Agregar Cliente</a></li>
+                <li><a href="admin_plantas_info.html">🌿 Información de Plantas</a></li>
+                <li><a href="admin_eventos_calendario.html">📅 Calendario de Eventos</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contrast-container">
+        <h2>🔍 Buscar Cliente</h2>
+        <p>Ingresa el folio o correo del cliente para obtener sus datos.</p>
+
+        <form id="clientSearchForm">
+            <label for="search">Folio o Correo:</label>
+            <input type="text" id="search" name="search" required>
+
+            <button type="submit">Buscar Cliente</button>
+        </form>
+
+        <div id="clientResult" class="hidden">
+<button id="modifyButton" class="hidden">✏️ Modificar</button>
+        </div>
+    </div>
+
+    <script src="admin_script_auth.js"></script>
+    <script src="client_search.js"></script>
+</body>
+</html>

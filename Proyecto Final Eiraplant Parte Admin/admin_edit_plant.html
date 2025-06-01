@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modificar Planta</title>
+    <link rel="stylesheet" href="admin_edit_plant_styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="admin_panel.html">🏠 Inicio</a></li>
+                <li><a href="admin_plantas.html">🌱 Volver al Catálogo</a></li>
+                <li><button id="logoutButton">🚪 Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="darkened-background">
+        <div class="neon-box">
+            <h2 class="admin-title">✏️ Modificar Información de Planta</h2>
+
+            <form id="editPlantForm" class="admin-form">
+                <div class="admin-form-group">
+                    <label for="plantName">🌿 Nombre de la Planta:</label>
+                    <input type="text" id="plantName" name="plantName">
+                </div>
+
+                <div class="admin-form-group">
+                    <label for="waterLevel">💧 Nivel de Riego (1-5):</label>
+                    <input type="number" id="waterLevel" name="waterLevel" min="1" max="5">
+                </div>
+
+                <div class="admin-form-group">
+                    <label for="plantInfo">📜 Información de la Planta:</label>
+                    <textarea id="plantInfo" name="plantInfo"></textarea>
+                </div>
+
+                <div class="admin-actions">
+                    <button type="submit" class="admin-btn-save">💾 Guardar Cambios</button>
+                    <button type="button" id="deletePlant" class="admin-btn-delete">🗑️ Eliminar Planta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="plant_edit.js"></script>
+</body>
+</html>
